@@ -3,11 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arms Riders | AR</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<title>Arms Riders | AR Gaming</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -16,29 +18,37 @@ font-family:'Orbitron',sans-serif;
 }
 
 body{
-background:#0b0b0b;
-color:white;
+background:#050505;
+color:#fff;
+overflow-x:hidden;
 }
 
 header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 10%;
-background:#111;
+padding:18px 8%;
+background:rgba(0,0,0,.8);
+backdrop-filter:blur(10px);
 border-bottom:2px solid red;
+z-index:999;
 }
 
 .logo{
-font-size:30px;
-font-weight:bold;
-color:red;
+font-size:32px;
+font-weight:900;
+color:#ff1a1a;
+text-shadow:0 0 20px red;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:20px;
+margin-left:25px;
 transition:.3s;
 }
 
@@ -47,27 +57,27 @@ color:red;
 }
 
 .hero{
-height:90vh;
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
-background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
-url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80");
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1800&q=80");
 background-size:cover;
 background-position:center;
 }
 
 .hero h1{
-font-size:65px;
+font-size:80px;
 color:red;
-text-shadow:0 0 20px red;
+text-shadow:0 0 25px red;
 }
 
 .hero p{
+font-size:22px;
 margin:20px 0;
-font-size:20px;
 }
 
 .btn{
@@ -86,28 +96,29 @@ color:red;
 }
 
 section{
-padding:70px 10%;
+padding:90px 10%;
 }
 
-h2{
+.title{
+font-size:40px;
+text-align:center;
+margin-bottom:40px;
 color:red;
-margin-bottom:30px;
-font-size:35px;
 }
 
 .games{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 gap:20px;
 }
 
 .card{
-background:#151515;
+background:#111;
 padding:30px;
 border:2px solid red;
 border-radius:12px;
 text-align:center;
-transition:.3s;
+transition:.4s;
 }
 
 .card:hover{
@@ -115,123 +126,199 @@ transform:translateY(-10px);
 box-shadow:0 0 20px red;
 }
 
-.admin{
-background:#111;
-padding:40px;
-border-radius:10px;
-border-left:5px solid red;
-}
-
 footer{
-padding:30px;
-text-align:center;
 background:#111;
-margin-top:50px;
+padding:25px;
+text-align:center;
 border-top:2px solid red;
 }
+
 </style>
 
 </head>
-<body>
 
-<header>
+<body>
+  <header>
 
 <div class="logo">ARMS RIDERS</div>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">Games</a>
-<a href="#">Admin</a>
-<a href="#">Contact</a>
+<a href="#home">Home</a>
+<a href="#games">Games</a>
+<a href="#team">Team</a>
+<a href="#contact">Contact</a>
 </nav>
 
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
 
 <div>
 
+<img src="images/logo.png" width="170" alt="AR Logo">
+
 <h1>ARMS RIDERS</h1>
 
-<p>Play • Compete • Dominate</p>
+<p>PLAY • DOMINATE • WIN</p>
 
 <a class="btn" href="https://chat.whatsapp.com/DrRS3VbbohP9b4iuBuS1gV?mode=gi_t">
-Join WhatsApp
+
+JOIN WHATSAPP
+
 </a>
 
 </div>
 
 </section>
 
-<section>
+<section id="games">
 
-<h2>Supported Games</h2>
+<h2 class="title">SUPPORTED GAMES</h2>
 
 <div class="games">
 
-<div class="card">BGMI</div>
+<div class="card">
+<h2>BGMI</h2>
+<p>Competitive Esports</p>
+</div>
 
-<div class="card">PUBG Global</div>
+<div class="card">
+<h2>PUBG GLOBAL</h2>
+<p>Global Squad</p>
+</div>
 
-<div class="card">Free Fire MAX</div>
+<div class="card">
+<h2>FREE FIRE MAX</h2>
+<p>Rank Push</p>
+</div>
 
-<div class="card">Valorant</div>
+<div class="card">
+<h2>VALORANT</h2>
+<p>5v5 Competitive</p>
+</div>
 
-<div class="card">Call of Duty Mobile</div>
+<div class="card">
+<h2>COD MOBILE</h2>
+<p>Clan Battles</p>
+</div>
 
-<div class="card">More Coming Soon...</div>
+<div class="card">
+<h2>MORE GAMES</h2>
+<p>Coming Soon...</p>
+</div>
+
+</div>
+
+</section>
+<section id="team">
+
+<h2 class="title">OUR TEAM</h2>
+
+<div class="games">
+
+<div class="card">
+<h2>👑 Founder</h2>
+<p>Coming Soon</p>
+</div>
+
+<div class="card">
+<h2>🎯 Leader</h2>
+<p>Coming Soon</p>
+</div>
+
+<div class="card">
+<h2>⚡ Assaulter</h2>
+<p>Coming Soon</p>
+</div>
+
+<div class="card">
+<h2>🎯 Sniper</h2>
+<p>Coming Soon</p>
+</div>
 
 </div>
 
 </section>
 
-<section>
+<section id="tournament">
 
-<h2>Admin</h2>
+<h2 class="title">UPCOMING TOURNAMENT</h2>
 
-<div class="admin">
+<div class="card">
 
-<h3>Founder / Admin</h3>
+<h2 style="color:red;">BGMI SCRIMS</h2>
 
-<p>You (Will Update Later)</p>
+<p><b>Date:</b> Coming Soon</p>
 
-<p>Email : Coming Soon</p>
+<p><b>Time:</b> Coming Soon</p>
 
-<p>Discord : Coming Soon</p>
+<p><b>Prize Pool:</b> Coming Soon</p>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="title">GALLERY</h2>
+
+<div class="games">
+
+<div class="card">
+<img src="images/match1.jpg" width="100%">
+<p>Match Screenshot</p>
+</div>
+
+<div class="card">
+<img src="images/match2.jpg" width="100%">
+<p>Team Photo</p>
+</div>
+
+<div class="card">
+<img src="images/match3.jpg" width="100%">
+<p>Tournament</p>
+</div>
+
+</div>
+
+</section>
+<section id="contact">
+
+<h2 class="title">CONTACT US</h2>
+
+<div class="card">
+
+<h3>📱 WhatsApp Community</h3>
+
+<p>
+<a class="btn" href="https://chat.whatsapp.com/DrRS3VbbohP9b4iuBuS1gV?mode=gi_t">
+Join Now
+</a>
+</p>
+
+<br>
+
+<p>📧 Email: Coming Soon</p>
+
+<p>💬 Discord: Coming Soon</p>
 
 </div>
 
 </section>
 
 <footer>
-<img src="images/logo.png" alt="Arms Riders Logo" width="80">
-<section id="team">
-<h2>Our Team</h2>
 
-<div class="card">
-<h3>AR Shadow</h3>
-<p>Leader</p>
-</div>
+<img src="images/logo.png" width="90" alt="AR Logo">
 
-<div class="card">
-<h3>AR Sniper</h3>
-<p>Assaulter</p>
-</div>
+<br><br>
 
-</section>
-<p>Email: armsriders@email.com</p>
+<h2 style="color:red;">ARMS RIDERS</h2>
 
-<a href="https://discord.gg/yourlink">Join Discord</a> 
-  <section>
-<h2>Upcoming Tournament</h2>
+<p>Play • Compete • Dominate</p>
 
-<p>BGMI Scrims</p>
-<p>Date: 15 July</p>
+<br>
 
-</section>
- <img src="images/match1.jpg" width="300">
-<img src="images/match2.jpg" width="300">
-  © 2026 Arms Riders (AR) | All Rights Reserved
+<p>© 2026 Arms Riders (AR). All Rights Reserved.</p>
 
 </footer>
 
