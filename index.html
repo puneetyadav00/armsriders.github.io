@@ -132,7 +132,20 @@ padding:25px;
 text-align:center;
 border-top:2px solid red;
 }
+.member{
+color:red;
+font-size:28px;
+font-weight:bold;
+margin:12px 0;
+cursor:pointer;
+text-shadow:0 0 10px red;
+transition:.3s;
+}
 
+.member:hover{
+color:white;
+transform:scale(1.05);
+}
 </style>
 
 </head>
@@ -227,13 +240,17 @@ JOIN WHATSAPP
 <h2>🎯 Leader</h2>
 <p>Naman Khatri</p>
 </div>
-
 <div class="card">
 <h2>⚡ Assaulter</h2>
-<p>{1.ARxBOT}
-  {2.ARxSHADoW}
-  {3.ARxJOHNWICK}</p>
+
+<p class="member" onclick="showBio('bot')">1. ARxBOT</p>
+
+<p class="member" onclick="showBio('shadow')">2. ARxSHADoW</p>
+
+<p class="member" onclick="showBio('john')">3. ARxJOHNWICK</p>
+
 </div>
+
 
 <div class="card">
 <h2>🎯 Sniper</h2>
@@ -325,6 +342,22 @@ Join Now
 <p>© 2026 Arms Riders (AR). All Rights Reserved.</p>
 
 </footer>
+<script>
+function showBio(player){
 
+if(player=="bot"){
+alert("ARxBOT\n\nBiography:\nYaha ARxBOT ki biography likho.");
+}
+
+if(player=="shadow"){
+alert("ARxSHADoW\n\nBiography:\nYaha SHADoW ki biography likho.");
+}
+
+if(player=="john"){
+alert("ARxJOHNWICK\n\nBiography:\nYaha JOHNWICK ki biography likho.");
+}
+
+}
+</script>
 </body>
 </html>
