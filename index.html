@@ -345,17 +345,95 @@ Join Now
 <script>
 function showBio(player){
 
-if(player=="bot"){
-alert("ARxBOT\n\nBiography:\nYaha ARxBOT ki biography likho.");
+let data = {
+
+bot:{
+photo:"images/bot.jpg",
+name:"ARxBOT",
+matches:"250",
+kills:"1850",
+insta:"@arxbot_official"
+},
+
+shadow:{
+photo:"images/shadow.jpg",
+name:"ARxSHADoW",
+matches:"310",
+kills:"2205",
+insta:"@arxshadow"
+},
+
+john:{
+photo:"images/john.jpg",
+name:"ARxJOHNWICK",
+matches:"190",
+kills:"1490",
+insta:"@arxjohnwick"
 }
 
-if(player=="shadow"){
-alert("ARxSHADoW\n\nBiography:\nYaha SHADoW ki biography likho.");
-}
+};
 
-if(player=="john"){
-alert("ARxJOHNWICK\n\nBiography:\nYaha JOHNWICK ki biography likho.");
+let p=data[player];
+
+let win=window.open("","_blank","width=420,height=650");
+
+win.document.write(`
+<html>
+<head>
+<title>${p.name}</title>
+<style>
+body{
+background:#050505;
+color:white;
+font-family:Arial;
+text-align:center;
+padding:20px;
 }
+img{
+width:180px;
+height:180px;
+border-radius:50%;
+border:4px solid red;
+object-fit:cover;
+box-shadow:0 0 20px red;
+}
+h1{
+color:red;
+}
+.card{
+background:#111;
+padding:20px;
+margin-top:20px;
+border:2px solid red;
+border-radius:15px;
+}
+p{
+font-size:22px;
+margin:12px 0;
+}
+a{
+color:red;
+font-size:20px;
+text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<img src="${p.photo}">
+
+<h1>${p.name}</h1>
+
+<div class="card">
+<p>🎮 Matches : ${p.matches}</p>
+<p>💀 Kills : ${p.kills}</p>
+<p>📸 Instagram : <a href="https://instagram.com/${p.insta.replace('@','')}" target="_blank">${p.insta}</a></p>
+</div>
+
+</body>
+</html>
+`);
 
 }
 </script>
