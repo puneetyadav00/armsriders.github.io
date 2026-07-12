@@ -108,3 +108,42 @@ transition:.4s;
 transform:scale(1.05);
 box-shadow:0 0 20px red;
 }
+.stats{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.stat{
+background:#111;
+border:2px solid red;
+padding:20px;
+border-radius:12px;
+width:180px;
+transition:.3s;
+}
+
+.stat:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px red;
+}
+
+.stat h2{
+color:red;
+font-size:36px;
+}
+
+.stat p{
+margin-top:10px;
+font-size:15px;
+}
+
+#countdown{
+margin-top:35px;
+font-size:28px;
+font-weight:bold;
+color:#ff3030;
+text-shadow:0 0 10px red;
+}
