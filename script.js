@@ -134,3 +134,18 @@ function closeBio(){
 document.getElementById("bioModal").style.display="none";
 
 }
+function toggleTheme(){
+
+if(document.body.style.background=="white"){
+
+document.body.style.background="#050505";
+document.body.style.color="white";
+
+}else{
+
+document.body.style.background="white";
+document.body.style.color="black";
+
+}
+
+}
