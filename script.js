@@ -79,3 +79,58 @@ if(slotText){
 slotText.innerHTML = slots;
 
 }
+const players = {
+
+bot:{
+name:"ARxBOT",
+role:"Assaulter",
+matches:"Matches : 150",
+kills:"Kills : 980",
+kd:"KD : 6.8",
+insta:"https://instagram.com/",
+image:"logo.png"
+},
+
+shadow:{
+name:"ARxSHADoW",
+role:"Assaulter",
+matches:"Matches : 180",
+kills:"Kills : 1100",
+kd:"KD : 7.1",
+insta:"https://instagram.com/",
+image:"logo.png"
+},
+
+john:{
+name:"ARxJOHNWICK",
+role:"Assaulter",
+matches:"Matches : 170",
+kills:"Kills : 1020",
+kd:"KD : 6.9",
+insta:"https://instagram.com/",
+image:"logo.png"
+}
+
+};
+
+function showBio(id){
+
+const p=players[id];
+
+document.getElementById("bioModal").style.display="flex";
+
+document.getElementById("bioImage").src=p.image;
+document.getElementById("bioName").innerHTML=p.name;
+document.getElementById("bioRole").innerHTML=p.role;
+document.getElementById("bioMatches").innerHTML=p.matches;
+document.getElementById("bioKills").innerHTML=p.kills;
+document.getElementById("bioKD").innerHTML=p.kd;
+document.getElementById("bioInsta").href=p.insta;
+
+}
+
+function closeBio(){
+
+document.getElementById("bioModal").style.display="none";
+
+}
