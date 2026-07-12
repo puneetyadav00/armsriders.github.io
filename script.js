@@ -70,3 +70,12 @@ timer.innerHTML=
 }
 
 },1000);
+let slots = 100;
+
+const slotText = document.getElementById("slots");
+
+if(slotText){
+
+slotText.innerHTML = slots;
+
+}
