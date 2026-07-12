@@ -202,3 +202,17 @@ font-size:32px;
 cursor:pointer;
 color:red;
 }
+#leaderboard .card h2{
+color:gold;
+}
+
+#winners .card{
+max-width:700px;
+margin:auto;
+text-align:center;
+}
+
+#winners h2{
+color:red;
+margin-bottom:15px;
+}
